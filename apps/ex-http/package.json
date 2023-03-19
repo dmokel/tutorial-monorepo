@@ -1,0 +1,19 @@
+{
+  "name": "@data-farmer/ex-http",
+  "private": true,
+  "version": "1.0.0",
+  "author": "David Mokel",
+  "scripts": {
+    "typecheck": "tsc --build",
+    "build": "rm -rf ./dist; ts-node ./scripts/build.ts",
+    "start": "node ./dist/app.js",
+    "dev": "pnpm run build; pnpm run start"
+  },
+  "devDependencies": {
+    "fastify": "^4.14.1"
+  },
+  "dependencies": {
+    "@data-farmer/utils": "workspace:^1.0.0",
+    "dotenv": "^16.0.3"
+  }
+}

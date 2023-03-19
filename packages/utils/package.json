@@ -1,0 +1,14 @@
+{
+  "name": "@data-farmer/utils",
+  "private": true,
+  "version": "1.0.0",
+  "author": "David Mokel",
+  "main": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "typecheck": "tsc --build"
+  }
+}

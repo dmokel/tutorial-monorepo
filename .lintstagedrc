@@ -1,0 +1,4 @@
+{
+  "*": ["prettier --config .prettierrc --write --cache --ignore-unknown"],
+  "*.ts": ["eslint ./ --max-warnings=0 --ext .ts --fix"]
+}

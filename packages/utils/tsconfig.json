@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["./src/**/*.ts", "./__test__/**/*"]
+}
