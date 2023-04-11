@@ -3,7 +3,11 @@
   "compilerOptions": {
     "emitDeclarationOnly": false,
     "noEmit": true,
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "baseUrl": "./src",
+    "paths": {
+      ":api/*": ["api/*"]
+    }
   },
-  "include": ["./src/**/*.ts", "./__test__/**/*"]
+  "include": ["./src/**/*.ts"]
 }

@@ -6,7 +6,7 @@
       "path": "packages/utils"
     },
     {
-      "path": "apps/ex-http"
-    }
+      "path": "apps/ex-http-graphql"
+    },
   ]
 }

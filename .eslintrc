@@ -13,7 +13,7 @@
     "prettier"
   ],
   "rules": {
-    "no-console": "warn",
+    "no-console": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-explicit-any": "off"
   }

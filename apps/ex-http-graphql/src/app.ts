@@ -1,8 +1,7 @@
-import * as dotenv from 'dotenv';
-import path from 'path';
-dotenv.config({ path: path.join(process.cwd(), 'env', `${process.env.SERVER_ENV ?? ''}.env`) });
-
 import { start } from './api';
+
+const showEnv = () => ({});
+console.log('env:', showEnv());
 
 process.on('unhandledRejection', (err) => {
   // eslint-disable-next-line no-console

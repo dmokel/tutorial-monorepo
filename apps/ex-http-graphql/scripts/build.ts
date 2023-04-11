@@ -9,8 +9,11 @@ build({
   entryPoints: ['./src/app.ts'],
   format: 'cjs',
   target: 'node16.0',
+  inject: ['./env/load-env.ts'],
   outfile: './dist/app.js',
-}).catch((e) => {
-  console.log('Build not successful', e.message);
-  process.exit(1);
-});
+})
+  .then(() => console.log('⚡ Done'))
+  .catch((e) => {
+    console.log('Build not successful', e.message);
+    process.exit(1);
+  });
