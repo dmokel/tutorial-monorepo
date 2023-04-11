@@ -33,7 +33,7 @@ npm install -g pnpm@7.29.3
 # 安装
 
 # 在monorepo根目录执行
-pnpm install --fix-lockfile
+pnpm install
 # 安装monorepo root依赖
 
 # 然后执行
@@ -50,3 +50,29 @@ docker build -t ex-http-graphql -f apps/ex-http-graphql/Dockerfile apps/ex-http-
 ```
 
 获取更多[@data-farmer/ex-http-graphql](./apps/ex-http-graphql/README.md) 的信息
+
+# @data-farmer/ex-copy-static-asset-with-esbuild
+
+```sh
+# 需要pnpm支持，通过
+npm install -g pnpm@7.29.3
+# 安装
+
+# 在monorepo根目录执行
+pnpm install
+# 安装monorepo root依赖
+
+# 然后执行
+pnpm --filter @data-farmer/ex-copy-static-asset-with-esbuild install
+# 安装ex-copy-static-asset-with-esbuild项目的依赖
+
+# 在monorepo根目录执行
+pnpm run ex-copy-static-asset-with-esbuild:build
+# 构建js产物
+
+# 继续在monorepo根目录执行
+docker build -t ex-copy-static-asset-with-esbuild -f apps/ex-copy-static-asset-with-esbuild/Dockerfile apps/ex-copy-static-asset-with-esbuild
+# 构建image镜像
+```
+
+获取更多[@data-farmer/ex-copy-static-asset-with-esbuild](./apps/ex-copy-static-asset-with-esbuild/README.md) 的信息

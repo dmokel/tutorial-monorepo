@@ -1,0 +1,21 @@
+{
+  "name": "@data-farmer/ex-copy-static-asset-with-esbuild",
+  "private": true,
+  "version": "1.0.0",
+  "author": "David Mokel",
+  "scripts": {
+    "typecheck": "tsc --build",
+    "build": "rm -rf ./dist; ts-node ./scripts/build.ts",
+    "start": "node ./dist/app.js",
+    "debug": "rm -rf ./dist; ts-node ./scripts/debug.ts; pnpm run start"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild-plugin-copy": "^2.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "jimp": "^0.22.7"
+  }
+}

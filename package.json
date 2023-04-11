@@ -9,6 +9,8 @@
     "typecheck": "turbo run typecheck",
     "ex-http-graphql:build": "pnpm run --filter @data-farmer/ex-http-graphql build",
     "ex-http-graphql:debug": "pnpm run --filter @data-farmer/ex-http-graphql debug",
+    "ex-copy-static-asset-with-esbuild:build": "pnpm run --filter @data-farmer/ex-copy-static-asset-with-esbuild build",
+    "ex-copy-static-asset-with-esbuild:debug": "pnpm run --filter @data-farmer/ex-copy-static-asset-with-esbuild debug",
     "prepare": "husky install",
     "cz": "cz"
   },

@@ -8,5 +8,8 @@
     {
       "path": "apps/ex-http-graphql"
     },
+    {
+      "path": "apps/ex-copy-static-asset-with-esbuild"
+    }
   ]
 }
