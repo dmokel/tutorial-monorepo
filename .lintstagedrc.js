@@ -10,7 +10,6 @@ const removeIgnoredFiles = async (files) => {
 module.exports = {
   '*': async (files) => {
     const filesToLint = await removeIgnoredFiles(files);
-    return [`eslint ./ --max-warnings=0 --ext ${filesToLint} --fix`];
+    return [`eslint ${filesToLint} --max-warnings=0`];
   },
-  '*': ['prettier --config .prettierrc --write --cache --ignore-unknown'],
 };

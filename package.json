@@ -1,7 +1,10 @@
 {
-  "name": "@data-farmer/monorepo",
+  "name": "@tutorial-monorepo/root",
+  "private": true,
   "version": "1.0.0",
-  "description": "A monorepo in data-farmer",
+  "description": "A typescript monorepo example using pnpm workspace, turbo, prettier, eslint, commitlint, lint-staged, husky and esbuild.",
+  "author": "David Mokel",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint ./ --max-warnings=0 --ext .ts",
     "lint-fix": "eslint ./ --max-warnings=0 --ext .ts --fix",
@@ -14,13 +17,10 @@
     "prepare": "husky install",
     "cz": "cz"
   },
-  "keywords": [],
-  "author": "David Mokel",
-  "license": "ISC",
   "engines": {
     "node": ">=16.19.0"
   },
-  "packageManager": "pnpm@7.29.3",
+  "packageManager": "pnpm@8.10.0",
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",

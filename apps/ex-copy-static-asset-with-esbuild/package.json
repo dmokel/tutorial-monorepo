@@ -1,5 +1,5 @@
 {
-  "name": "@data-farmer/ex-copy-static-asset-with-esbuild",
+  "name": "@tutorial-monorepo/ex-copy-static-asset-with-esbuild",
   "private": true,
   "version": "1.0.0",
   "author": "David Mokel",
