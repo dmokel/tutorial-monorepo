@@ -1,5 +1,10 @@
 {
   "extends": "../../tsconfig.options.json",
+  "references": [
+    {
+      "path": "../../packages/utils"
+    }
+  ],
   "compilerOptions": {
     "emitDeclarationOnly": false,
     "noEmit": true,
